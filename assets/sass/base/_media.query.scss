@@ -1,0 +1,24 @@
+// @author: laoono
+// @date: 2016-05-18
+// @time: 15:47
+// @contact: laoono.com
+// @description:
+
+// 引入基本变量
+@import "var";
+// 引用mixin
+@import "mixin";
+
+@each $responsive in $base-responsive {
+    @media only screen and (min-width: #{$responsive}) {
+        html {
+            @include fz($responsive);
+        }
+    }
+}
+
+@media only screen and (max-width: 319px) {
+    html {
+        @include fz(319px);
+    }
+}

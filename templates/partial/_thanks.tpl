@@ -1,0 +1,11 @@
+<section>
+	<h2>感谢</h2>
+	<ul>
+		<li>@赵兄</li>
+		<li>@小鲲</li>
+		<li>@郑明义</li>
+		<li>@邓强</li>
+		<li>@骚哥</li>
+		<li>@张老师</li>
+	</ul>
+</section>

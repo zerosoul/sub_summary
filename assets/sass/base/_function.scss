@@ -1,0 +1,29 @@
+// @author: laoono
+// @date: 2016-05-19
+// @time: 15:46
+// @contact: laoono.com
+// @description:
+
+// 引入基本变量
+@import "var";
+
+// taobao rem
+@function px2rem($px) {
+    @return $px / round($base-viewport-width / 10) * 1rem;
+}
+
+// media query px 2 rem
+@function rem($px) {
+    @return $px / $base-fonts-2-rem * 1rem;
+}
+
+@function z-index($list, $element) {
+    $z-index: index($list, $element);
+
+    @if $z-index {
+        @return $z-index;
+    }
+
+    @warn "there is no item '#{$element}' in this list; choose one of: #{$list}";
+    @return null;
+}

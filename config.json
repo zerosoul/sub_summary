@@ -1,0 +1,8 @@
+{
+    "template": "smarty",
+    "smarty": {
+        "dataManifest": {},
+        "constPath": "./const.json"
+    },
+    "tinypng": false
+}
